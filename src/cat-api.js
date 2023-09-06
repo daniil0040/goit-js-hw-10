@@ -1,4 +1,6 @@
 import axios from "axios";
+import SlimSelect from 'slim-select';
+import 'slim-select/dist/slimselect.css';
 axios.defaults.headers.common["x-api-key"] = "live_IaUyPDc2cPm2YUBgWdzuGo18tqSgJPnHAhCxA6C52fhTmUZubFvylcQnIJp2u0J4";
 const selectors = {
     select: document.querySelector(".js-breed-select"),
@@ -26,6 +28,12 @@ axios.get('https://api.thecatapi.com/v1/breeds')
         selectors.select.insertAdjacentHTML("beforeend", createOptionMarkup(data))
         selectors.select.classList.replace("breed-select-load", "breed-select")
         selectors.loader.classList.replace("loader", "loader-hiden")
+        new SlimSelect({
+            select: selectors.select,
+             settings: {
+    placeholderText: 'Select breed',
+  }
+      });
   })
   .catch(function (error) {
       selectors.error.classList.replace("error-false", "error")
