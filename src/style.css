@@ -1,0 +1,37 @@
+.breed-select-load{
+    display: none;
+}
+.breed-select{
+    display: block;
+}
+.error-false{
+    display: none;
+}
+.error{
+    display: block;
+    color: red;
+    font-size: 20px;
+}
+.loader{
+    display: block;
+    font-size: 20px;
+}
+.loader-hiden{
+    display: none;
+}
+.cat-info{
+display: flex;
+margin-top: 40px;
+align-items: center;
+}
+.cat-info-load{
+display: none;
+}
+.container{
+    display: inline;
+    padding-left: 30px;
+}
+.cat-img{
+    height: 100%;
+    width: 350px;
+}
