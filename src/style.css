@@ -1,8 +1,12 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+}
 .breed-select-load{
     display: none;
 }
 .breed-select{
     display: block;
+    font-family: 'Montserrat', sans-serif;
 }
 .error-false{
     display: none;
@@ -11,10 +15,12 @@
     display: block;
     color: red;
     font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
 }
 .loader{
     display: block;
     font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
 }
 .loader-hiden{
     display: none;
@@ -23,6 +29,7 @@
 display: flex;
 margin-top: 40px;
 align-items: center;
+font-family: 'Montserrat', sans-serif;
 }
 .cat-info-load{
 display: none;
